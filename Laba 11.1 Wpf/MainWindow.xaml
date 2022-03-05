@@ -1,0 +1,34 @@
+﻿<Window x:Class="Laba_11._1_Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laba_11._1_Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="200">
+
+    <StackPanel>
+        <Path Fill="red" Stroke="Black" StrokeThickness="1">
+            <Path.Data>
+                <CombinedGeometry GeometryCombineMode="Union">
+                    <CombinedGeometry.Geometry1>
+                        <CombinedGeometry GeometryCombineMode="Exclude">
+                            <CombinedGeometry.Geometry1>
+                                <EllipseGeometry RadiusX="50" RadiusY="50" Center="75,75" />
+                            </CombinedGeometry.Geometry1>
+                            <CombinedGeometry.Geometry2>
+                                <EllipseGeometry RadiusX="40" RadiusY="40" Center="75,75" />
+                            </CombinedGeometry.Geometry2>
+                        </CombinedGeometry>
+                    </CombinedGeometry.Geometry1>
+                    <CombinedGeometry.Geometry2>
+                        <RectangleGeometry Rect="30,70,90,10"/>
+                    </CombinedGeometry.Geometry2>
+                </CombinedGeometry>
+            </Path.Data>
+            <Path.LayoutTransform>
+                <RotateTransform Angle="45"></RotateTransform>
+            </Path.LayoutTransform>
+        </Path>
+    </StackPanel>
+</Window>
